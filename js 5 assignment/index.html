@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+<link rel="stylesheet" href="style.css"> 
+
+</head>
+<body>
+    <h1>JavaScript Calculator</h1>
+    <hr>
+    <br>
+    <div class="big-container">
+        
+        <div class="left">  
+            <!-- class left is use for first number -->
+            <h2>Number 1</h2>
+            <input type="number" name="firstNum" placeholder="First Number" id="first">
+        </div>
+
+       <div class="middle">
+        <!-- class middle is use for operators -->
+        <h2>Operator</h2>
+        <select name="oper" id="ope">
+            <option value="choose operator"></option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+       </div>
+
+   
+         <div class="right">
+            <!-- class right is use for second number -->
+            <h2>Number 2</h2>
+            <input type="number" name="secondNum" placeholder="second Number" id="second">
+        </div>
+    </div>
+    <div class="btn">
+    <button id="button1" onclick="cal()">submit</button>
+</div><br><br>
+<div class="ans-con">
+<div class="answer">
+    <!-- class answer is use for result of calculation of two num -->
+            <h2>Answer :</h2>
+            <input type="text" name="answer" id="result">
+        </div>
+    </div>
+
+        <script src="logic.js"></script>
+</body>
+</html>
